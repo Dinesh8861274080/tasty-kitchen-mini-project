@@ -13,14 +13,6 @@
     "sourceType": "module"
   },
   "plugins": ["prettier"],
-  "overrides": [
-    {
-      "files": ["styledComponents.js"],
-      "rules": {
-        "import/prefer-default-export": "off"
-      }
-    }
-  ],
   "rules": {
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
@@ -54,7 +46,6 @@
     "react/button-has-type": "warn",
     "react/no-unescaped-entities": "warn",
     "react/jsx-props-no-spreading": "off",
-    "operator-assignment": ["warn", "always"],
-    "radix": "off"
+    "operator-assignment": ["warn", "always"]
   }
 }

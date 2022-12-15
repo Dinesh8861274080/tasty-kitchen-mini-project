@@ -3,4 +3,14 @@
 import '@testing-library/jest-dom'
 import {configure} from '@testing-library/react'
 
-configure({testIdAttribute: 'testid'})
+window.matchMedia =
+  window.matchMedia ||
+  function () {
+    return {
+      matches: false,
+      addListener: function () {},
+      removeListener: function () {},
+    }
+  }
+
+configure({testIdAttribute: 'data-testid'})
